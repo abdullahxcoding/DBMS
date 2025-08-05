@@ -28,6 +28,7 @@ SELECT * FROM books WHERE price < 599.00 ORDER BY price DESC;
 
 SELECT * FROM books ORDER BY price DESC LIMIT 3;
 
-SELECT * FROM books ORDER BY year_published OFFSET 2 LIMIT 2;
+SELECT * FROM books ORDER BY year_published DESC OFFSET 2 LIMIT 2;
 
-SELECT * FROM books WHERE publication = 'XYZ' ORDER BY publication;
+
+SELECT * FROM books WHERE publication = 'XYZ' ORDER BY title;
